@@ -1,8 +1,8 @@
 # CMake generated Testfile for 
-# Source directory: /home/ubuntu/catkin_ws/src
-# Build directory: /home/ubuntu/catkin_ws/build
+# Source directory: /home/ubuntu/robotics_udacity/p2/catkin_ws/src
+# Build directory: /home/ubuntu/robotics_udacity/p2/catkin_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("simple_arm")
+subdirs("my_robot")
