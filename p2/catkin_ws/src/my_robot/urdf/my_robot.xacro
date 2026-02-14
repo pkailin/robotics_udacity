@@ -33,6 +33,9 @@
       <geometry>
         <box size=".4 .2 .1"/>
       </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
     </visual>
 
     <!-- Casters -->
@@ -89,6 +92,9 @@
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
     </visual>
 
   </link>
@@ -116,6 +122,9 @@
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
     </visual>
 
   </link>
@@ -163,6 +172,9 @@
       <geometry>
         <box size="0.05 0.05 0.05"/>
       </geometry>
+      <material name="red">
+        <color rgba="1 0 0 1"/>
+      </material>
     </visual>
 
   </link>
@@ -197,6 +209,9 @@
       <geometry>
         <mesh filename="package://my_robot/meshes/hokuyo.dae"/>
       </geometry>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
     </visual>
 
   </link>
