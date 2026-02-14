@@ -1,6 +1,32 @@
 <?xml version="1.0"?>
 <robot>
 
+<!-- ================= COLORS ================= -->
+  <!-- Chassis Color -->
+  <gazebo reference="chassis">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+
+  <!-- Left Wheel Color -->
+  <gazebo reference="left_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <!-- Right Wheel Color -->
+  <gazebo reference="right_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>
+
+  <!-- Camera Color -->
+  <gazebo reference="camera">
+    <material>Gazebo/Red</material>
+  </gazebo>
+
+  <!-- Hokuyo/Lidar Color -->
+  <gazebo reference="hokuyo">
+    <material>Gazebo/FlatBlack</material>
+  </gazebo>
+
   <gazebo>
     <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
       <legacyMode>false</legacyMode>
