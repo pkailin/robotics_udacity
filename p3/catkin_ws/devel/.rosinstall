@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ubuntu/robotics_udacity/p3/catkin_ws/devel/setup.sh
