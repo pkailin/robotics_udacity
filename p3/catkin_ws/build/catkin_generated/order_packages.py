@@ -1,5 +1,5 @@
 # generated from catkin/cmake/template/order_packages.context.py.in
 source_root_dir = '/home/ubuntu/robotics_udacity/p3/catkin_ws/src'
-whitelisted_packages = 'pgm_map_creator'.split(';') if 'pgm_map_creator' != '' else []
+whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
 underlay_workspaces = '/home/ubuntu/robotics_udacity/p3/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/ubuntu/robotics_udacity/p3/catkin_ws/devel;/opt/ros/noetic' != '' else []

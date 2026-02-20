@@ -3,6 +3,6 @@ prefix=/home/ubuntu/robotics_udacity/p3/catkin_ws/devel
 Name: pgm_map_creator
 Description: Description of pgm_map_creator
 Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
+Cflags: -I/usr/include
+Libs: -L${prefix}/lib -lcollision_map_creator /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+Requires: roscpp rospy

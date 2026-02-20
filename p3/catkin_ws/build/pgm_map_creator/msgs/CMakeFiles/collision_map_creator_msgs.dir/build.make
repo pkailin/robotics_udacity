@@ -65,9 +65,33 @@ pgm_map_creator/msgs/collision_map_request.pb.h: /usr/bin/protoc
 pgm_map_creator/msgs/collision_map_request.pb.cc: pgm_map_creator/msgs/collision_map_request.pb.h
 	@$(CMAKE_COMMAND) -E touch_nocreate pgm_map_creator/msgs/collision_map_request.pb.cc
 
+pgm_map_creator/msgs/vector2d.pb.h: /usr/include/gazebo-11/gazebo/msgs/proto/vector2d.proto
+pgm_map_creator/msgs/vector2d.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/robotics_udacity/p3/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Running cpp protocol buffer compiler on /usr/lib/x86_64-linux-gnu/pkgconfig/../../..//include/gazebo-11/gazebo/msgs/proto/vector2d.proto"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/protoc --cpp_out /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs -I /home/ubuntu/robotics_udacity/p3/catkin_ws/src/pgm_map_creator/msgs -I /usr/include/gazebo-11/gazebo/msgs/proto /usr/include/gazebo-11/gazebo/msgs/proto/vector2d.proto
+
+pgm_map_creator/msgs/vector2d.pb.cc: pgm_map_creator/msgs/vector2d.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate pgm_map_creator/msgs/vector2d.pb.cc
+
+pgm_map_creator/msgs/header.pb.h: /usr/include/gazebo-11/gazebo/msgs/proto/header.proto
+pgm_map_creator/msgs/header.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/robotics_udacity/p3/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Running cpp protocol buffer compiler on /usr/lib/x86_64-linux-gnu/pkgconfig/../../..//include/gazebo-11/gazebo/msgs/proto/header.proto"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/protoc --cpp_out /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs -I /home/ubuntu/robotics_udacity/p3/catkin_ws/src/pgm_map_creator/msgs -I /usr/include/gazebo-11/gazebo/msgs/proto /usr/include/gazebo-11/gazebo/msgs/proto/header.proto
+
+pgm_map_creator/msgs/header.pb.cc: pgm_map_creator/msgs/header.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate pgm_map_creator/msgs/header.pb.cc
+
+pgm_map_creator/msgs/time.pb.h: /usr/include/gazebo-11/gazebo/msgs/proto/time.proto
+pgm_map_creator/msgs/time.pb.h: /usr/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/robotics_udacity/p3/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Running cpp protocol buffer compiler on /usr/lib/x86_64-linux-gnu/pkgconfig/../../..//include/gazebo-11/gazebo/msgs/proto/time.proto"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/protoc --cpp_out /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs -I /home/ubuntu/robotics_udacity/p3/catkin_ws/src/pgm_map_creator/msgs -I /usr/include/gazebo-11/gazebo/msgs/proto /usr/include/gazebo-11/gazebo/msgs/proto/time.proto
+
+pgm_map_creator/msgs/time.pb.cc: pgm_map_creator/msgs/time.pb.h
+	@$(CMAKE_COMMAND) -E touch_nocreate pgm_map_creator/msgs/time.pb.cc
+
 pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/collision_map_request.pb.cc.o: pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/flags.make
 pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/collision_map_request.pb.cc.o: pgm_map_creator/msgs/collision_map_request.pb.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/robotics_udacity/p3/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/collision_map_request.pb.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/robotics_udacity/p3/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/collision_map_request.pb.cc.o"
 	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/collision_map_creator_msgs.dir/collision_map_request.pb.cc.o -c /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/collision_map_request.pb.cc
 
 pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/collision_map_request.pb.cc.i: cmake_force
@@ -78,87 +102,62 @@ pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/collision_map_req
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/collision_map_creator_msgs.dir/collision_map_request.pb.cc.s"
 	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/collision_map_request.pb.cc -o CMakeFiles/collision_map_creator_msgs.dir/collision_map_request.pb.cc.s
 
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.o: pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/flags.make
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.o: pgm_map_creator/msgs/vector2d.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/robotics_udacity/p3/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.o"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.o -c /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/vector2d.pb.cc
+
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.i"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/vector2d.pb.cc > CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.i
+
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.s"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/vector2d.pb.cc -o CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.s
+
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.o: pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/flags.make
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.o: pgm_map_creator/msgs/header.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/robotics_udacity/p3/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.o"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.o -c /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/header.pb.cc
+
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.i"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/header.pb.cc > CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.i
+
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.s"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/header.pb.cc -o CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.s
+
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.o: pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/flags.make
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.o: pgm_map_creator/msgs/time.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/robotics_udacity/p3/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.o"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.o -c /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/time.pb.cc
+
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.i"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/time.pb.cc > CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.i
+
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.s"
+	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/time.pb.cc -o CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.s
+
 # Object files for target collision_map_creator_msgs
 collision_map_creator_msgs_OBJECTS = \
-"CMakeFiles/collision_map_creator_msgs.dir/collision_map_request.pb.cc.o"
+"CMakeFiles/collision_map_creator_msgs.dir/collision_map_request.pb.cc.o" \
+"CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.o" \
+"CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.o" \
+"CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.o"
 
 # External object files for target collision_map_creator_msgs
 collision_map_creator_msgs_EXTERNAL_OBJECTS =
 
 /home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/collision_map_request.pb.cc.o
+/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/vector2d.pb.cc.o
+/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/header.pb.cc.o
+/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/time.pb.cc.o
 /home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/build.make
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libSimTKsimbody.so.3.6
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libdart.so.6.9.2
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_gui.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_physics.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_ode.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_transport.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_util.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_common.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_opcode.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.71.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.71.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libsdformat9.so.9.8.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libignition-common3-graphics.so.3.14.2
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_client.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_gui.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_sensors.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_rendering.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_physics.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_ode.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_transport.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_msgs.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_util.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_common.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_gimpact.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_opcode.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libgazebo_opende_ou.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libOgreMain.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libOgreTerrain.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libOgrePaging.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libSimTKmath.so.3.6
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libSimTKcommon.so.3.6
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libblas.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/liblapack.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libblas.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/liblapack.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libdart-external-odelcpsolver.so.6.9.2
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libccd.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libfcl.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libassimp.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/liboctomap.so.1.9.3
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/liboctomath.so.1.9.3
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libignition-transport8.so.8.3.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libignition-fuel_tools4.so.4.6.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libignition-msgs5.so.5.10.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libignition-math6.so.6.15.0
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libprotobuf.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libignition-common3.so.3.14.2
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: /usr/lib/x86_64-linux-gnu/libuuid.so
 /home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so: pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/robotics_udacity/p3/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library /home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/robotics_udacity/p3/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library /home/ubuntu/robotics_udacity/p3/catkin_ws/devel/lib/libcollision_map_creator_msgs.so"
 	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/collision_map_creator_msgs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -172,6 +171,12 @@ pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/clean:
 
 pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/depend: pgm_map_creator/msgs/collision_map_request.pb.h
 pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/depend: pgm_map_creator/msgs/collision_map_request.pb.cc
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/depend: pgm_map_creator/msgs/vector2d.pb.h
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/depend: pgm_map_creator/msgs/vector2d.pb.cc
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/depend: pgm_map_creator/msgs/header.pb.h
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/depend: pgm_map_creator/msgs/header.pb.cc
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/depend: pgm_map_creator/msgs/time.pb.h
+pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/depend: pgm_map_creator/msgs/time.pb.cc
 	cd /home/ubuntu/robotics_udacity/p3/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/robotics_udacity/p3/catkin_ws/src /home/ubuntu/robotics_udacity/p3/catkin_ws/src/pgm_map_creator/msgs /home/ubuntu/robotics_udacity/p3/catkin_ws/build /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs /home/ubuntu/robotics_udacity/p3/catkin_ws/build/pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/depend
 

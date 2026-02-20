@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "pgm_map_creator")
 set(pgm_map_creator_VERSION "0.0.0")
-set(pgm_map_creator_MAINTAINER "JZX-MY <571188579@qq.com>")
+set(pgm_map_creator_MAINTAINER "robond <haoyang@udacity.com>")
 set(pgm_map_creator_PACKAGE_FORMAT "2")
 set(pgm_map_creator_BUILD_DEPENDS "roscpp" "rospy")
 set(pgm_map_creator_BUILD_EXPORT_DEPENDS "roscpp" "rospy")
