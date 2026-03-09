@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/ftdi_scan.dir/ftdi_scan.cpp.o  -o /home/ubuntu/robotics_udacity/p5/catkin_ws/devel/lib/kobuki_ftdi/ftdi_scan  -lftdi 

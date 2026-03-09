@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/overwrite_serial_number.dir/overwrite_serial_number.cpp.o  -o /home/ubuntu/robotics_udacity/p5/catkin_ws/devel/lib/kobuki_ftdi/overwrite_serial_number  -lusb -lftdi 

@@ -8,7 +8,7 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/ubuntu/robotics_udacity/p4/catkin_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH='/home/ubuntu/robotics_udacity/p4/catkin_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu:/usr/local/cuda-12.2/lib64:'
+export LD_LIBRARY_PATH='/home/ubuntu/robotics_udacity/p4/catkin_ws/devel/lib:/opt/ros/noetic/lib:/usr/local/cuda-12.2/lib64:'
 export PKG_CONFIG_PATH="/home/ubuntu/robotics_udacity/p4/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/ubuntu/robotics_udacity/p4/catkin_ws/build'
 export ROSLISP_PACKAGE_DIRECTORIES='/home/ubuntu/robotics_udacity/p4/catkin_ws/devel/share/common-lisp'
