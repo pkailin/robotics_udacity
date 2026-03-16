@@ -1,0 +1,33 @@
+<launch>
+  <!-- mobile base -->
+  <arg name="base"/>
+  <arg name="serialport"/>
+  <include file="$(find turtlebot_bringup)/launch/includes/$(arg base)/mobile_base.launch.xml">
+    <arg name="serialport" value="$(arg serialport)"/>
+    <arg name="manager" value="mobile_base_nodelet_manager"/>
+  </include>
+
+  <!-- velocity commands multiplexer -->
+  <node pkg="twist_mux" type="twist_mux" name="cmd_vel_mux" output="screen">
+    <remap from="cmd_vel_out" to="mobile_base/commands/velocity"/>
+    <rosparam>
+      topics:
+        - name: navigation
+          topic: cmd_vel_mux/input/navi
+          timeout: 1.0
+          priority: 0
+        - name: safety
+          topic: cmd_vel_mux/input/safety_controller
+          timeout: 1.0
+          priority: 10
+        - name: teleop
+          topic: cmd_vel_mux/input/teleop
+          timeout: 1.0
+          priority: 2
+        - name: switch
+          topic: cmd_vel_mux/input/switch
+          timeout: 1.0
+          priority: 5
+    </rosparam>
+  </node>
+</launch>

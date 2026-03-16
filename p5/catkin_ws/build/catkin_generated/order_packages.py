@@ -2,4 +2,4 @@
 source_root_dir = '/home/ubuntu/robotics_udacity/p5/catkin_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/ubuntu/robotics_udacity/p5/catkin_ws/devel;/home/ubuntu/robotics_udacity/p4/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/ubuntu/robotics_udacity/p5/catkin_ws/devel;/home/ubuntu/robotics_udacity/p4/catkin_ws/devel;/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/ubuntu/catkin_ws/devel;/opt/ros/noetic'.split(';') if '/home/ubuntu/catkin_ws/devel;/opt/ros/noetic' != '' else []
