@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/robotics_udacity/p5_2/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/robotics_udacity/p5_2/catkin_ws/install -G Unix Makefiles
