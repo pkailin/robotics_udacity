@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/robotics_udacity/p5_2/catkin_ws/install
+
+Name: turtlebot_navigation
+Description: Description of turtlebot_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
